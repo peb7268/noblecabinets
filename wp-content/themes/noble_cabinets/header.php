@@ -45,11 +45,27 @@
 	wp_head();
 ?>
 </head>
-
 <body <?php body_class(); ?>>
-
 <div id="header">
+	<div class="inner">
+	<div id="top">
+	<a href="<?php echo home_url( '/' ); ?>" id="logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
+		<h1><?php bloginfo( 'name' ); ?></h1>
+		<p><?php bloginfo('description'); ?></p>
+	</a>
+	
+	<div id="search">
+		<?php get_search_form(); ?>
+	</div><!-- #search -->
 
+	
+	<!-- <p><?php //bloginfo( 'description' ); ?></p> -->
+	</div><!-- #top -->
+
+	<div id="access" role="navigation">
+		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
+		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
+		
 		<ul id="social">
 				<li id="facebook"><a href="" target="_blank">facebook</a></li>
 				<li id="twitter"><a href="" target="_blank">twitter</a></li>
@@ -71,26 +87,7 @@
 					</div><!-- #fbAnchor -->
 				</li>
 			</ul>
-
-	<div class="inner">
-	<div id="top">
-	<a href="<?php echo home_url( '/' ); ?>" id="logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"> 
-		<h1><?php bloginfo( 'name' ); ?></h1>
-	</a>
-	
-	<div id="search">
-		<?php get_search_form(); ?>
-	</div><!-- #search -->
-
-	
-	<!-- <p><?php //bloginfo( 'description' ); ?></p> -->
-	</div><!-- #top -->
-
-	<div id="access" role="navigation">
-		<?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu.  The menu assiged to the primary position is the one used.  If none is assigned, the menu with the lowest ID is used.  */ ?>
-		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 	</div> 
-	
-	
 	</div><!-- .inner -->
+<div class="clear">&nbsp;</div>
 </div><!-- #header -->
