@@ -1,4 +1,4 @@
-<?php /* Template Name: Homepage  */
+<?php /* Template Name: old-Homepage-old  */
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>	
