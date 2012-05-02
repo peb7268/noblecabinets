@@ -203,6 +203,7 @@ body {
   background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/header.png');
   background-repeat: repeat-x;
   background-repeat: repeat-x;
+  background: red;
 }
 #header {
   margin: 0;
