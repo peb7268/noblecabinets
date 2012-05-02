@@ -40,8 +40,10 @@ jQuery(document).ready(function($){
 	$('.sidebar-block ul').find('li:last').css('margin-bottom','10px');
 	$('.sidebar-block ul#ads li:odd').addClass('odd');
 	
-	var tagline = $('#top a p').html();
-	var tag = tagline.split('. ');
-	tagline = '<span class="one">'+ tag[0] + '</span><span class="two">' + tag[1] + '</span>'; 
-	$('#top a p').html(tagline);
+	if	($('#top a p').length > 0 ){
+		var tagline = $('#top a p').html();
+		var tag = tagline.split('. ');
+		tagline = '<span class="one">'+ tag[0] + '</span><span class="two">' + tag[1] + '</span>'; 
+		$('#top a p').html(tagline);
+	}
 });
