@@ -75,14 +75,17 @@ body {
   color: black;
   background: white;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 table {
   border-collapse: separate;
   border-spacing: 0;
 }
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
 }
@@ -92,7 +95,8 @@ q:before,
 q:after {
   content: "";
 }
-blockquote, q {
+blockquote,
+q {
   quotes: "" "";
 }
 a {
@@ -111,6 +115,7 @@ h3,
 h4 {
   margin: 4px 0 0 0;
 }
+/*-- Mixins -------------------------------------------------------------------------------------------------*/
 /*-- Utility Styles ------------------------------------------------------------------*/
 .left {
   float: left;
@@ -118,12 +123,307 @@ h4 {
 .right {
   float: right;
 }
+/*-- Globals -------------------------------------------------------------------------------------------------*/
+h1.title {
+  font-family: 'Almendra SC', serif;
+  font-size: 24pt;
+  color: #4D1309;
+  width: 95%;
+  padding: 0 0 2px 0;
+  margin: 0 0 7px 0;
+  border-bottom: 1px solid #8c7069;
+}
+h2,
+p {
+  color: #423324;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.almendra {
+  font-family: 'Almendra SC', serif;
+}
+span.felipa {
+  font-family: 'Felipa', serif;
+  font-size: 32pt;
+  margin: 0 -2px 0 0px;
+}
+.francois {
+  font-family: 'Francois One', sans-serif;
+}
+.clear {
+  clear: both;
+  height: 1px;
+  width: 100%;
+}
+a.btn {
+  padding: 4px 45px 7px 5px;
+  margin: 4px;
+  display: block;
+  width: 75px;
+  text-align: center;
+  border-radius: 2px;
+  border: 1px solid #432910;
+  color: #E9D5C7;
+  text-shadow: 1px 1px 1px #333;
+  font-size: 10pt;
+  font-family: Helvetica,Arial, serif;
+  line-height: 1;
+  background-color: #a58b77;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/arrow.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-position: 100px 5px;
+}
+a.btn span.felipa {
+  letter-spacing: 2px;
+  color: #E9D5C7;
+  text-shadow: 1px 1px 1px #333;
+  font-size: 13pt;
+  font-family: 'Felipa', serif;
+}
+h2.title {
+  font-size: 16pt;
+  padding-bottom: 3px;
+  width: 90%;
+  margin: 7px 0 0;
+  color: #93BDC2;
+  text-shadow: 1px 1px 1px #555;
+  letter-spacing: 0px;
+}
+p {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.sep {
+  height: 0px;
+  border-bottom: 1px solid #99897f;
+  border-top: 1px solid #B9A599;
+  margin: 3px 0 7px;
+}
 /*-- Structure Styles ---------------------------------------------------------------*/
-#wrapper {
+body {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/header.png');
+  background-repeat: repeat-x;
+  background-repeat: repeat-x;
+}
+#header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 208px;
+  z-index: 9999;
+}
+#header #logo {
+  /*.getImg('logo.png');*/
+
+  /*background-repeat: no-repeat;*/
+
+  width: 470px;
+  height: 71px;
+  font-family: 'Almendra SC', serif;
+  font-size: 67px;
+  color: #4D1309;
+  display: block;
+  margin: 40px 0 0 0;
+  text-shadow: 0px -1px 1px #5d352e, 1px 1px 0px #400f06;
+  font-weight: bold;
+}
+#header #logo h1 {
+  opacity: .80;
+}
+#header #logo p {
+  color: #442816;
+  font-family: 'Francois One', sans-serif;
+  font-size: 9pt;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: none;
+  margin: -8px 0 0 0;
+}
+#header #logo p .two {
+  padding: 0 0 0 50px;
+}
+#header #search {
+  position: absolute;
+  right: 157px;
+  bottom: 83px;
+}
+#header #s {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/search-bg.png');
+  background-repeat: repeat-x;
+  width: 179px;
+  height: 35px;
+  border: 0px;
+  background-color: transparent;
+  color: #63574e;
+  padding: 0 0 0 10px;
+}
+#header #searchsubmit {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/btn-go.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 37px;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  text-indent: -9999px;
+}
+#header .inner {
+  width: 960px;
+  margin: 0 auto;
+}
+#header #top {
+  width: 960px;
+  height: 155px;
+  overflow: hidden;
+}
+#header #access {
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  float: left;
+  position: absolute;
+  z-index: 10;
+}
+#header #access .menu-header {
+  float: left;
+  width: 700px;
+  padding: 0;
+  margin: 0;
+}
+#header #access ul#menu-primary li {
+  float: left;
+  position: relative;
+}
+#header #access ul#menu-primary li a {
+  display: block;
+  color: #9b856e;
+  height: 50px;
+  padding: 0 12px;
+  line-height: 2.8;
+  font-size: 13pt;
+  font-family: Helvetica, Arial, sans-serif;
+  border-left: 1px solid #3e240b;
+  border-right: 1px solid #4b301b;
+  text-shadow: 0px 0px 3px #333;
+  background-color: #452f1b;
+  /*
+				background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 47, 27)), to(rgb(67, 41, 16)));
+				background-image: -webkit-linear-gradient(top, rgb(69, 47, 27), rgb(67, 41, 16));
+				background-image: -moz-linear-gradient(top, rgb(69, 47, 27), rgb(67, 41, 16));
+				background-image: -o-linear-gradient(top, rgb(69, 47, 27), rgb(67, 41, 16));
+				background-image: -ms-linear-gradient(top, rgb(69, 47, 27), rgb(67, 41, 16));
+				background-image: linear-gradient(top, rgb(69, 47, 27), rgb(67, 41, 16));
+				filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#452f1b', EndColorStr='#432910');
+				*/
+
+}
+#header #access ul#menu-primary li a:hover {
+  cursor: pointer;
+}
+#header #access ul#menu-primary ul.sub-menu,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu ul.sub-menu {
+  position: absolute;
+  left: 0;
+  display: none;
+  background: #452F1B;
+}
+#header #access ul#menu-primary ul.sub-menu li,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu li,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu ul.sub-menu li {
+  display: block;
+  width: 100%;
+}
+#header #access ul#menu-primary ul.sub-menu a,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu a,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu ul.sub-menu a {
+  width: 155px;
+  line-height: 1.4;
+  border-bottom: 1px solid #432910;
+  padding: 12px;
+  height: auto;
+}
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu ul.sub-menu,
+#header #access ul#menu-primary ul.sub-menu ul.sub-menu ul.sub-menu ul.sub-menu {
+  left: 100%;
+  top: 0;
+}
+#header #access ul#menu-primary li:hover .sub-menu {
+  display: inline;
+}
+#header #access ul#menu-primary .sub-menu li:hover .sub-menu {
+  display: inline;
+}
+#header #access ul#menu-primary .sub-menu li .sub-menu li:hover .sub-menu {
+  display: inline;
+}
+#header ul#social {
+  margin: 13px 0 0 0;
+  width: 225px;
+  float: left;
+}
+#header ul#social li {
+  float: left;
+  margin: 0 5px 0 0;
+}
+#header ul#social li a {
+  height: 24px;
+  width: 24px;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/social_sprite.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+#header ul#social li#facebook a {
+  background-position: 0 0;
+}
+#header ul#social li#twitter a {
+  background-position: -24px 0;
+}
+#header ul#social li#tweet {
+  background: none;
+  width: 77px;
+  padding: 1px 0 0 0;
+}
+#header ul#social li #like {
+  width: 75px;
+}
+#header ul#social li #like a {
+  width: auto;
+  text-indent: 0px;
+  background: none;
+}
+.inner {
+  width: 96%;
+  margin: 0 auto;
+}
+.outer-wrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background-color: #e8d8c8;
+  /*
+	background-color: #64412a;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(100, 65, 42)), to(rgb(68, 40, 22)));
+	background-image: -webkit-linear-gradient(top, rgb(100, 65, 42), rgb(68, 40, 22));
+	background-image: -moz-linear-gradient(top, rgb(100, 65, 42), rgb(68, 40, 22));
+	background-image: -o-linear-gradient(top, rgb(100, 65, 42), rgb(68, 40, 22));
+	background-image: -ms-linear-gradient(top, rgb(100, 65, 42), rgb(68, 40, 22));
+	background-image: linear-gradient(top, rgb(100, 65, 42), rgb(68, 40, 22));
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#64412a', EndColorStr='#442816');
+	*/
+
+}
+.inner-wrapper {
   width: 960px;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
+  height: 700px;
 }
 #footer {
   width: 960px;
@@ -134,4 +434,365 @@ h4 {
 #navBar ul li {
   float: left;
   margin: 0 14px 0 0;
+}
+/*-- Homepage -------------------------------------------------------------------------------------------------*/
+#sliderFrame {
+  position: relative;
+  background-color: #a58b77;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a58b77), to(#917561));
+  background-image: -webkit-linear-gradient(top, #a58b77, #917561);
+  background-image: -moz-linear-gradient(top, #a58b77, #917561);
+  background-image: -o-linear-gradient(top, #a58b77, #917561);
+  background-image: -ms-linear-gradient(top, #a58b77, #917561);
+  background-image: linear-gradient(top, #a58b77, #917561);
+  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#a58b77', EndColorStr='#917561');
+  border: 1px solid #432910;
+  height: 284px;
+  margin: 10px auto 0;
+}
+#sliderFrame #slider {
+  width: 905px;
+  height: 250px;
+  background: #eee;
+  border: 5px solid #432910;
+  margin: 12px auto;
+  box-shadow: 0px 1px 6px #000;
+}
+#sliderFrame #slider h2 {
+  font-size: 27pt;
+  margin: 8px 0 10px 0;
+}
+#sliderFrame #slider .one img {
+  margin: 7px 12px 0 7px;
+  height: 92%;
+  width: 167px;
+  display: block;
+  float: left;
+}
+#sliderFrame #slider .one .three {
+  background-color: #e8e5d6;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e5d6), to(#715d4a));
+  background-image: -webkit-linear-gradient(top, #e8e5d6, #715d4a);
+  background-image: -moz-linear-gradient(top, #e8e5d6, #715d4a);
+  background-image: -o-linear-gradient(top, #e8e5d6, #715d4a);
+  background-image: -ms-linear-gradient(top, #e8e5d6, #715d4a);
+  background-image: linear-gradient(top, #e8e5d6, #715d4a);
+  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#e8e5d6', EndColorStr='#715d4a');
+  height: 255px;
+  display: block;
+}
+#sliderFrame #slider a {
+  display: block;
+  height: 250px;
+  z-index: 0;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #e8d8c8;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8d8c8), to(#afa091));
+  background-image: -webkit-linear-gradient(top, #e8d8c8, #afa091);
+  background-image: -moz-linear-gradient(top, #e8d8c8, #afa091);
+  background-image: -o-linear-gradient(top, #e8d8c8, #afa091);
+  background-image: -ms-linear-gradient(top, #e8d8c8, #afa091);
+  background-image: linear-gradient(top, #e8d8c8, #afa091);
+  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#e8d8c8', EndColorStr='#afa091');
+}
+#sliderFrame #sliderNav {
+  margin: 60px 0 0 35px;
+}
+#sliderFrame #sliderNav a {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/slide_nav.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  display: block;
+  height: 40px;
+  text-indent: -9999px;
+}
+#sliderFrame #sliderNav a.slide0 {
+  height: 40px;
+  background-position: 0 0;
+}
+#sliderFrame #sliderNav a.slide1 {
+  height: 24px;
+  background-position: 0 -40px;
+}
+#sliderFrame #sliderNav a.slide2 {
+  height: 34px;
+  background-position: 0 -65px;
+}
+#sliderFrame #sliderNav a.slide3 {
+  height: 23px;
+  background-position: 0 -100px;
+}
+#sliderFrame #sliderNav a.slide4 {
+  height: 35px;
+  background-position: 0 -123px;
+}
+#sliderFrame #sliderNav a.slide5 {
+  height: 40px;
+  background-position: 0 -158px;
+}
+#sliderFrame #sliderNav a.slide0.activeSlide {
+  height: 40px;
+  background-position: 0 -210px;
+}
+#sliderFrame #sliderNav a.slide1.activeSlide {
+  height: 24px;
+  background-position: 0 -250px;
+}
+#sliderFrame #sliderNav a.slide2.activeSlide {
+  height: 34px;
+  background-position: 0 -275px;
+}
+#sliderFrame #sliderNav a.slide3.activeSlide {
+  height: 23px;
+  background-position: 0 -310px;
+}
+#sliderFrame #sliderNav a.slide4.activeSlide {
+  height: 35px;
+  background-position: 0 -333px;
+}
+#sliderFrame #sliderNav a.slide4.activeSlide {
+  height: 40px;
+  background-position: 0 -368px;
+}
+#sliderFrame #sliderNavWrapper {
+  position: absolute;
+  top: -4px;
+  right: 0px;
+  display: block;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/cloth.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  width: 235px;
+  height: 294px;
+  display: block;
+  z-index: 10;
+}
+#home-bottom {
+  margin: 20px 0 0 0;
+}
+#home-bottom #home-body {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/home_lower_bg.png');
+  background-repeat: repeat-x;
+  /*
+		background-color: #a58b77;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(165, 139, 119)), to(rgb(145, 117, 97)));
+		background-image: -webkit-linear-gradient(top, rgb(165, 139, 119), rgb(145, 117, 97));
+		background-image: -moz-linear-gradient(top, rgb(165, 139, 119), rgb(145, 117, 97));
+		background-image: -o-linear-gradient(top, rgb(165, 139, 119), rgb(145, 117, 97));
+		background-image: -ms-linear-gradient(top, rgb(165, 139, 119), rgb(145, 117, 97));
+		background-image: linear-gradient(top, rgb(165, 139, 119), rgb(145, 117, 97));
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#a58b77', EndColorStr='#917561');
+		*/
+
+  border: 1px solid #735E4F;
+  width: 700px;
+  height: 287px;
+  float: left;
+  margin: 0 10px 0 0;
+  box-shadow: -6px 1px 7px #555555;
+}
+#home-bottom #home-sidebar {
+  width: 100px;
+  float: left;
+}
+#home-bottom .callout-block {
+  background-color: #a58b77;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a58b77), to(#917561));
+  background-image: -webkit-linear-gradient(top, #a58b77, #917561);
+  background-image: -moz-linear-gradient(top, #a58b77, #917561);
+  background-image: -o-linear-gradient(top, #a58b77, #917561);
+  background-image: -ms-linear-gradient(top, #a58b77, #917561);
+  background-image: linear-gradient(top, #a58b77, #917561);
+  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#a58b77', EndColorStr='#917561');
+  border: 1px solid #432910;
+  height: 48px;
+  width: 245px;
+  margin: 0 0 10px;
+}
+#home-bottom .callout-block#one {
+  height: 105px;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/callout1.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+}
+#home-bottom .callout-block#two {
+  height: 85px;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/logo-wordpress.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  background-position: 162px 4px;
+}
+#home-bottom .callout-block#two h2 {
+  color: #CDCDCD;
+  text-shadow: 1px 1px 1px #333;
+  font-size: 14pt;
+  padding: 0 0 0 4px;
+}
+#home-bottom .callout-block#two p {
+  padding: 4px 0 0 4px;
+  width: 155px;
+}
+#home-bottom .callout-block#three {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/callout-social.png');
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  height: 73px;
+}
+#footer {
+  height: 30px;
+  position: relative;
+  bottom: 0;
+  background: #432910;
+  width: 100%;
+  color: #9b856e;
+}
+#footer .inner {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+}
+#sidebar {
+  font-family: helvetica, arial, sans-serif;
+  width: 260px;
+  float: left;
+  margin: 6px auto 0;
+}
+#sidebar a {
+  color: #423324;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 10pt;
+  display: block;
+  padding: 7px 4px;
+  border-bottom: 1px solid #A6907A;
+  border-top: 1px solid #c7bcb0;
+}
+#sidebar a:hover {
+  background: #432910;
+  color: #9b856e;
+}
+#sidebar h3 {
+  font-family: helvetica, arial, sans-serif;
+  font-size: 13pt;
+  color: white;
+  padding: 7px 4px;
+  text-shadow: 1px 1px 1px #999;
+  margin: 0 0 4px 0;
+  background-color: #c4d5e0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c4d5e0), to(#9fbec1));
+  background-image: -webkit-linear-gradient(top, #c4d5e0, #9fbec1);
+  background-image: -moz-linear-gradient(top, #c4d5e0, #9fbec1);
+  background-image: -o-linear-gradient(top, #c4d5e0, #9fbec1);
+  background-image: -ms-linear-gradient(top, #c4d5e0, #9fbec1);
+  background-image: linear-gradient(top, #c4d5e0, #9fbec1);
+  filter: progid:dximagetransform.microsoft.gradient(GradientType=0, StartColorStr='#c4d5e0', EndColorStr='#9fbec1');
+  border: 1px solid #a8c3c8;
+  border-bottom: 1px solid #87a2a4;
+  border-top: 1px solid #bee3e7;
+  width: 95%;
+  box-shadow: 0px 0px 4px #333;
+}
+#sidebar .sidebar-block ul {
+  backgound: #baaea1;
+  margin: -3px 0 0 0;
+  background: #BAAEA1;
+  width: 256px;
+}
+#sidebar .sidebar-block ul#ads {
+  overflow: hidden;
+  width: 260px;
+  background: none;
+}
+#sidebar .sidebar-block ul#ads li {
+  width: 125px;
+  background: #333;
+  height: 125px;
+  margin: 0 0px 5px 0;
+  float: left;
+}
+#sidebar .sidebar-block ul#ads li a {
+  background: none;
+  border: none;
+}
+#sidebar .sidebar-block ul#ads li a:hover {
+  background: none;
+}
+#sidebar .sidebar-block ul#ads li.odd {
+  margin-right: 10px;
+}
+#sidebar .sidebar-block ul#ads li.large {
+  width: 260px;
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-banner.png');
+  background-repeat: repeat-x;
+  height: 145px;
+}
+#sidebar .sidebar-block ul#ads li#ad-1 {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-referral.png');
+  background-repeat: repeat-x;
+}
+#sidebar .sidebar-block ul#ads li#ad-2 {
+  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-testimonials.png');
+  background-repeat: repeat-x;
+}
+/*-- Blog -------------------------------------------------------------------------------------------------*/
+.eachPost {
+  height: 175px;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #DDD;
+  overflow: hidden;
+}
+.eachPost .featured_img {
+  width: 185px;
+  height: 145px;
+  background: #333;
+  margin: 0 20px 0 5px;
+  overflow: hidden;
+  position: relative;
+}
+.eachPost .theContent {
+  width: 60%;
+}
+.eachPost p.postMeta {
+  color: #999;
+  margin: 10px 0 0 0;
+}
+.eachPost .social-sharing {
+  overflow: hidden;
+  margin: 5px 0 0 0;
+}
+.eachPost .social-sharing .twitter-btn {
+  width: 100px;
+  float: left;
+}
+.eachPost .social-sharing .fb-like {
+  width: 100px;
+  float: left;
+}
+/*-- Template Specific Styles -------------------------------------------------------------------------------------------------*/
+.page .inner-wrapper {
+  margin: 10px auto;
+  height: auto;
+  min-height: 475px;
+}
+.page .inner-wrapper #theContent {
+  width: 680px;
+  float: left;
+  margin: 0 20px 0 0;
+}
+.home .inner-wrapper {
+  margin: 10px auto;
+  height: auto;
+  min-height: 475px;
+}
+.home .inner-wrapper #theContent {
+  width: 100%;
+  background: red;
+  float: left;
+  margin: 0 0px 0 0;
 }

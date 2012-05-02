@@ -11,6 +11,15 @@ wp_enqueue_script('cycle');
 wp_enqueue_script('jquery-ui');
 wp_enqueue_script('global');
 
+//get the theme_dir in the content editor
+function get_theme_dir(){
+
+$dir = get_bloginfo('stylesheet_directory');
+
+return $dir;
+}
+add_shortcode('get_theme_dir', 'get_theme_dir');
+
 /**
  * TwentyTen functions and definitions
  *

@@ -48,7 +48,9 @@
 	 *
 	 * Without further ado, the loop:
 	 */ ?>
-<?php while ( have_posts() ) : the_post(); ?>
+<?php while ( have_posts() ) : the_post(); 
+
+?>
 
 <?php /* How to display posts in the Gallery category. */ ?>
 

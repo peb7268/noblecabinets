@@ -1,4 +1,4 @@
-<?php //*** Template Name: Homepage ***/
+<?php /* Template Name: Homepage  */
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>	
@@ -9,5 +9,4 @@ get_header(); ?>
 	</div><!-- outer-wrapper -->
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

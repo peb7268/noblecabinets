@@ -6,6 +6,7 @@ jQuery(document).ready(function($){
 		$('#slider').cycle({
 			 pager: '#sliderNav',
 			 timeout: 6000,
+			 fx: 'scrollLeft'
 		});	
 	}
 	
@@ -25,7 +26,8 @@ jQuery(document).ready(function($){
 			},500);
 			
 	});
-
+	
+	//clear the search form out
 	var val = $('#s').val();
 	$('#s').click(function(){
 		$('#s').val('');
@@ -34,4 +36,12 @@ jQuery(document).ready(function($){
 	$('#s').blur(function(){
 		$('#s').val(val);
 	});
+	
+	$('.sidebar-block ul').find('li:last').css('margin-bottom','10px');
+	$('.sidebar-block ul#ads li:odd').addClass('odd');
+	
+	var tagline = $('#top a p').html();
+	var tag = tagline.split('. ');
+	tagline = '<span class="one">'+ tag[0] + '</span><span class="two">' + tag[1] + '</span>'; 
+	$('#top a p').html(tagline);
 });

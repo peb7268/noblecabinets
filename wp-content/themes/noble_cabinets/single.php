@@ -14,7 +14,9 @@ get_header(); ?>
 					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'twentyten' ) . ' %title' ); ?>
 					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'twentyten' ) . '' ); ?>
 
-					<h1><?php the_title(); ?></h1>
+					<h1><?php the_title(); ?>
+					single.php
+					</h1>
 
 						<?php twentyten_posted_on(); ?>
 
