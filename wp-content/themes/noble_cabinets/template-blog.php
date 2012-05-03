@@ -2,10 +2,19 @@
 /* Template name: Blog Template */
 get_header(); ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<div class="outer-wrapper">
+	<div class="inner-wrapper">
+		<div id="theContent">
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 <div class="eachPost">
 	<div class="featured_img left">
-			<!-- Image goes here -->
+			<?php 
+				if ( has_post_thumbnail() ) {
+					the_post_thumbnail();
+				} else {
+					echo 'no thumbnail';
+				}
+			?>
 	</div><!-- .featured_img -->
 
 				<div class="theContent left">
@@ -41,4 +50,10 @@ get_header(); ?>
 	<div class="clear">&nbsp;</div><!-- .clear -->
 </div><!-- .eachPost -->
 <?php endwhile; ?>
-<?php endif; ?>
+			<?php endif; ?>
+		</div><!-- #theContent -->
+		<?php get_sidebar(); ?>
+	</div><!-- .inner-wrapper -->
+</div><!-- .outer-wrapper -->
+
+<?php get_footer(); ?>

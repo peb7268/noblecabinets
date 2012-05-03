@@ -67,10 +67,10 @@
 		<?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
 		
 		<ul id="social">
-				<li id="facebook"><a href="" target="_blank">facebook</a></li>
-				<li id="twitter"><a href="" target="_blank">twitter</a></li>
+				<li id="facebook"><a href="http://www.facebook.com/NobleCabinets" target="_blank">facebook</a></li>
+				<li id="twitter"><a href="http://twitter.com/#!/noblecabinets" target="_blank">twitter</a></li>
 				<li id="tweet">
-				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Check Out The Noble Cabinet Shop" data-via="peb7268">Tweet</a>
+				<a href="https://twitter.com/share" class="twitter-share-button" data-text="Check Out The Noble Cabinet Shop" data-via="noblecabinets">Tweet</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 				</li>
 				<li id="like" style="position: relative; display: block;">
