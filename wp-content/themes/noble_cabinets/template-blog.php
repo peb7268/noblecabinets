@@ -56,7 +56,7 @@
 							}(document, 'script', 'facebook-jssdk'));</script>
 							</div><!-- .social-sharing -->
 							
-							<?php the_content(); ?>
+							<?php the_content('Read More..'); ?>
 		
 						</div><!-- .theContent -->
 		
