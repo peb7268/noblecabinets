@@ -49,4 +49,11 @@ jQuery(document).ready(function($){
 		$('.eachPost:first').css('borderTop','0px');
 		$('.eachPost:last').css('borderBottom','0px');
 	}
+	if($('.widget-container').length > 0){
+		$('.widget-container ul').each(function(index, el){
+			console.log(index, el)
+			var el = $(el);
+			el.find('li a:first').css('borderTop','none');
+		});
+	}
 });
