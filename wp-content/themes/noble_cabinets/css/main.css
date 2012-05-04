@@ -646,6 +646,10 @@ body {
   text-indent: -9999px;
   height: 73px;
 }
+#home-bottom .ie {
+  filter: none;
+  background-color: transparent;
+}
 #footer {
   height: 30px;
   position: relative;
