@@ -44,4 +44,9 @@ jQuery(document).ready(function($){
 		tagline = '<span class="one">'+ tag[0] + '</span><span class="two">' + tag[1] + '</span>'; 
 		$('#top a p').html(tagline);
 	}
+	
+	if($('.page-template-template-blog-php').length > 0){
+		$('.eachPost:first').css('borderTop','0px');
+		$('.eachPost:last').css('borderBottom','0px');
+	}
 });
