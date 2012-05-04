@@ -806,7 +806,10 @@ body {
   font-size: 9pt;
   font-family: Arial;
   letter-spacing: 0px;
-  margin: 2px 0 0;
+  margin: 5px 0 0;
+}
+.eachPost .more-link:hover {
+  background: #d31312;
 }
 /*-- Template Specific Styles -------------------------------------------------------------------------------------------------*/
 .page .inner-wrapper {
