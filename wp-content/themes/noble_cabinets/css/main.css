@@ -650,6 +650,9 @@ body {
   filter: none;
   background-color: transparent;
 }
+.ie #home-bottom .callout-block#two {
+  background-color: #a58b77;
+}
 #footer {
   height: 30px;
   position: relative;
