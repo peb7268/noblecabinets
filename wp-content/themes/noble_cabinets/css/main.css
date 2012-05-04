@@ -756,14 +756,11 @@ body {
   border-bottom: 1px solid #A4998E;
 }
 .eachPost .featured_img {
-  width: 185px;
+  width: 182px;
   height: 145px;
-  background: #333;
   margin: 0 20px 0 5px;
   overflow: hidden;
   position: relative;
-}
-.eachPost .featured_img img {
   border: 1px solid #333;
 }
 .eachPost .theContent {
