@@ -756,15 +756,15 @@ body {
   border-bottom: 1px solid #A4998E;
 }
 .eachPost .featured_img {
-  width: 182px;
-  height: 145px;
+  width: 185px;
+  height: 185px;
   margin: 0 20px 0 5px;
   overflow: hidden;
   position: relative;
   border: 1px solid #333;
 }
 .eachPost .theContent {
-  width: 470px;
+  width: 465px;
 }
 .eachPost .theContent h1.title {
   font-family: 'Francois One', arial, sans-serif;
@@ -793,7 +793,17 @@ body {
 }
 .eachPost .more-link {
   display: block;
-  color: #333;
+  background: #A90D0C;
+  width: 85px;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  border: 1px solid #7F0706;
+  box-shadow: 0px 0px 2px #333;
+  text-shadow: 1px 1px 0px #333;
+  font-size: 11pt;
+  font-family: Francois One, arial;
+  letter-spacing: 0px;
 }
 /*-- Template Specific Styles -------------------------------------------------------------------------------------------------*/
 .page .inner-wrapper {
