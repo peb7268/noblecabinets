@@ -649,8 +649,6 @@ body {
 .ie #home-bottom .callout-block {
   filter: none;
   background-color: transparent;
-}
-.ie #home-bottom .callout-block#two {
   background-color: #a58b77;
 }
 #footer {

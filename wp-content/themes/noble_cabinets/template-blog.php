@@ -1,6 +1,7 @@
 <?php 
 	/* Template name: Blog Template */
 	get_header(); 
+	
 ?>
 
 <div class="outer-wrapper">
@@ -15,6 +16,9 @@
 					$pagenum = 1;
 				}
 				query_posts("posts_per_page=10&paged=$pagenum");
+				global $more;
+				$more = 0;
+				
 				if ( have_posts() ) while ( have_posts() ) : the_post(); ?>	
 				<div class="eachPost">
 				<div class="featured_img left">
