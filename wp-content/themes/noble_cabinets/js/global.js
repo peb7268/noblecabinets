@@ -2,7 +2,6 @@
 jQuery(document).ready(function($){
 	
 	if($('#slider').length > 0){
-		console.log('slider firing');
 		$('#slider').cycle({
 			 pager: '#sliderNav',
 			 timeout: 6000,
@@ -19,7 +18,6 @@ jQuery(document).ready(function($){
 			},500);
 		},
 		function(){
-		console.log('hover off');
 			$(this).animate({
 				backgroundColor:bg
 				/* color:color */ 
