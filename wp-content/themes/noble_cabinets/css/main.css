@@ -755,7 +755,6 @@ body {
 }
 /*-- Blog -------------------------------------------------------------------------------------------------*/
 .eachPost {
-  height: 175px;
   margin: 0;
   padding: 20px 0;
   border-top: 1px solid #fff5eb;
@@ -771,8 +770,6 @@ body {
 }
 .eachPost .theContent {
   width: 470px;
-  height: 100px;
-  overflow: hidden;
 }
 .eachPost .theContent h1.title {
   font-family: 'Francois One', arial, sans-serif;
