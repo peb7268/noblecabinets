@@ -216,6 +216,7 @@ body {
   background-image: url('../images/header.png');
   background-repeat: repeat-x;
   background-repeat: repeat-x;
+  background: red;
 }
 #header {
   margin: 0;
