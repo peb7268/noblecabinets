@@ -216,6 +216,7 @@ body {
   background-image: url('../images/header.png');
   background-repeat: repeat-x;
   background-repeat: repeat-x;
+  background: red;
 }
 #header {
   margin: 0;
@@ -771,6 +772,8 @@ body {
 }
 .eachPost .theContent {
   width: 470px;
+  height: 100px;
+  overflow: hidden;
 }
 .eachPost .theContent h1.title {
   font-family: 'Francois One', arial, sans-serif;
