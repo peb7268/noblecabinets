@@ -168,7 +168,7 @@ a.btn {
   font-family: Helvetica,Arial, serif;
   line-height: 1;
   background-color: #a58b77;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/arrow.png');
+  background-image: url('../images/arrow.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   background-position: 100px 5px;
@@ -200,7 +200,7 @@ p {
 }
 /*-- Structure Styles ---------------------------------------------------------------*/
 body {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/header.png');
+  background-image: url('../images/header.png');
   background-repeat: repeat-x;
   background-repeat: repeat-x;
 }
@@ -247,7 +247,7 @@ body {
   bottom: 83px;
 }
 #header #s {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/search-bg.png');
+  background-image: url('../images/search-bg.png');
   background-repeat: repeat-x;
   width: 179px;
   height: 35px;
@@ -257,7 +257,7 @@ body {
   padding: 0 0 0 10px;
 }
 #header #searchsubmit {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/btn-go.png');
+  background-image: url('../images/btn-go.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   width: 43px;
@@ -371,7 +371,7 @@ body {
 #header ul#social li a {
   height: 24px;
   width: 24px;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/social_sprite.png');
+  background-image: url('../images/social_sprite.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   display: block;
@@ -502,7 +502,7 @@ body {
   margin: 60px 0 0 35px;
 }
 #sliderFrame #sliderNav a {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/slide_nav.png');
+  background-image: url('../images/slide_nav.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   display: block;
@@ -562,7 +562,7 @@ body {
   top: -4px;
   right: 0px;
   display: block;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/cloth.png');
+  background-image: url('../images/cloth.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   width: 235px;
@@ -574,7 +574,7 @@ body {
   margin: 20px 0 0 0;
 }
 #home-bottom #home-body {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/home_lower_bg.png');
+  background-image: url('../images/home_lower_bg.png');
   background-repeat: repeat-x;
   /*
 		background-color: #a58b77;
@@ -614,14 +614,14 @@ body {
 }
 #home-bottom .callout-block#one {
   height: 105px;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/callout1.png');
+  background-image: url('../images/callout1.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   text-indent: -9999px;
 }
 #home-bottom .callout-block#two {
   height: 85px;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/logo-wordpress.png');
+  background-image: url('../images/logo-wordpress.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   background-position: 162px 4px;
@@ -637,7 +637,7 @@ body {
   width: 155px;
 }
 #home-bottom .callout-block#three {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/callout-social.png');
+  background-image: url('../images/callout-social.png');
   background-repeat: repeat-x;
   background-repeat: no-repeat;
   text-indent: -9999px;
@@ -728,16 +728,16 @@ body {
 }
 #sidebar .sidebar-block ul#ads li.large {
   width: 260px;
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-banner.png');
+  background-image: url('../images/ad-banner.png');
   background-repeat: repeat-x;
   height: 145px;
 }
 #sidebar .sidebar-block ul#ads li#ad-1 {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-referral.png');
+  background-image: url('../images/ad-referral.png');
   background-repeat: repeat-x;
 }
 #sidebar .sidebar-block ul#ads li#ad-2 {
-  background-image: url('http://localhost/clients/noble_cabinets/wp-content/themes/noble_cabinets/images/ad-testimonials.png');
+  background-image: url('../images/ad-testimonials.png');
   background-repeat: repeat-x;
 }
 /*-- Blog -------------------------------------------------------------------------------------------------*/
