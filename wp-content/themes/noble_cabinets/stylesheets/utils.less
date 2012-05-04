@@ -34,3 +34,13 @@ h1, h2, h3, h4 { margin: 4px 0 0 0; }
 .left { float: left; }
 .right { float: right; }
 
+.ie .clearfix {
+    zoom: 1;     
+ }  
+.clearfix:after {
+	 content: ' ';
+	 display: block;
+	 height: 0;
+	 clear: both;
+	 visibility: hidden;
+ }

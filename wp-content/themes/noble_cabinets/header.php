@@ -10,9 +10,9 @@
  */
 ?>
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="ie6"> <![endif]-->
-<!--[if IE 7]>         <html class="ie7"> <![endif]-->
-<!--[if IE 8]>         <html class="ie8"> <![endif]-->
+<!--[if lt IE 7]>      <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>         <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>         <html class="ie8 ie"> <![endif]-->
 <!--[if gt IE 8]><!--> <html>         <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
@@ -30,21 +30,9 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <link href='http://fonts.googleapis.com/css?family=Almendra+SC|Francois+One|Felipa' rel='stylesheet' type='text/css'>
 
-<?php
-	/* We add some JavaScript to pages with the comment form
-	 * to support sites with threaded comments (when in use).
-	 */
-	if ( is_singular() && get_option( 'thread_comments' ) )
-		wp_enqueue_script( 'comment-reply' );
-
-	/* Always have wp_head() just before the closing </head>
-	 * tag of your theme, or you will break many plugins, which
-	 * generally use this hook to add elements to <head> such
-	 * as styles, scripts, and meta tags.
-	 */
-	wp_head();
-?>
+<?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <div id="header">
 	<div class="inner">

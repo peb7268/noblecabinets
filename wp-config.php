@@ -36,6 +36,9 @@ define('DB_COLLATE', '');
 define('WP_DEBUG', true);
 @ini_set('display_errors', 1);
 
+//loop issues
+define('WP_USE_THEMES', false); 
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *
