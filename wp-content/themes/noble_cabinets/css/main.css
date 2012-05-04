@@ -646,7 +646,7 @@ body {
   text-indent: -9999px;
   height: 73px;
 }
-#home-bottom .ie {
+.ie .callout-block {
   filter: none;
   background-color: transparent;
 }
