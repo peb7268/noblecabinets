@@ -763,6 +763,9 @@ body {
   overflow: hidden;
   position: relative;
 }
+.eachPost .featured_img img {
+  border: 1px solid #333;
+}
 .eachPost .theContent {
   width: 470px;
 }
