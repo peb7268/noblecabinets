@@ -32,10 +32,8 @@
 		
 						<div class="theContent left">
 							<a href="<?php the_permalink(); ?>"><h1 class="title"><?php the_title(); ?></a></h1>
-							
-								<p class="postMeta"><?php the_date(); ?>
-								<span class="i_author"></span> | <?php the_author(); ?> </span>
-							</p>
+								<div class="postMeta clearfix">
+								<p><?php the_date(); ?><span class="i_author"></span> | <?php the_author(); ?></span></p>
 						
 							<div class="social-sharing clearfix">
 								<div class="twitter-btn">
@@ -55,7 +53,7 @@
 							fjs.parentNode.insertBefore(js, fjs);
 							}(document, 'script', 'facebook-jssdk'));</script>
 							</div><!-- .social-sharing -->
-							
+							</div><!-- .postMeta -->
 							<?php the_content('Read More &raquo;'); ?>
 		
 						</div><!-- .theContent -->

@@ -771,7 +771,10 @@ body {
   width: 100%;
   margin: 0;
 }
-.eachPost p.postMeta {
+.eachPost .postMeta {
+  margin: 4px 0;
+}
+.eachPost .postMeta p {
   color: #333;
   margin: 5px 0;
   font-size: 10pt;
