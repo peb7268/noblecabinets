@@ -791,6 +791,10 @@ body {
   width: 100px;
   float: left;
 }
+.eachPost .more-link {
+  display: block;
+  color: #333;
+}
 /*-- Template Specific Styles -------------------------------------------------------------------------------------------------*/
 .page .inner-wrapper {
   margin: 10px auto;
