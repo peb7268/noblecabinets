@@ -27,8 +27,8 @@
 							if ( has_post_thumbnail() ) {
 								echo get_the_post_thumbnail();
 							} else {
-								
-								echo "<img src=/images/default_featured_img.png />";
+								$img = get_bloginfo('stylesheet_directory')."/images/default_featured_img.png";
+								echo "<img src=".$img."/>";
 							}
 						?>		
 				</div><!-- .featured_img .left-->
