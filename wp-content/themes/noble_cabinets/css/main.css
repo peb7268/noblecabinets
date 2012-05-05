@@ -615,6 +615,10 @@ body {
   width: 245px;
   margin: 0 0 10px;
 }
+#home-bottom .callout-block a {
+  display: block;
+  height: 105px;
+}
 #home-bottom .callout-block#one {
   height: 105px;
   background-image: url('../images/callout1.png');
