@@ -731,6 +731,8 @@ body {
 #sidebar .sidebar-block ul#ads li a {
   background: none;
   border: none;
+  display: block;
+  height: 125px;
 }
 #sidebar .sidebar-block ul#ads li a:hover {
   background: none;
@@ -742,6 +744,9 @@ body {
   width: 260px;
   background-image: url('../images/ad-banner.png');
   background-repeat: repeat-x;
+  height: 145px;
+}
+#sidebar .sidebar-block ul#ads li.large a {
   height: 145px;
 }
 #sidebar .sidebar-block ul#ads li#ad-1 {
