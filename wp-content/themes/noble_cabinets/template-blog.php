@@ -26,7 +26,9 @@
 							//var_dump($post);
 							if ( has_post_thumbnail() ) {
 								echo get_the_post_thumbnail();
-							} 
+							} else {
+								echo "<img src='".bloginfo('stylesheet_directory')."/images/default_featured_img.png' />";
+							}
 						?>		
 				</div><!-- .featured_img .left-->
 		
