@@ -15,7 +15,7 @@
 				if(empty($pagenum)){
 					$pagenum = 1;
 				}
-				query_posts("posts_per_page=10&paged=$pagenum");
+				query_posts("posts_per_page=10&cat=9&paged=$pagenum");
 				global $more;
 				$more = 0;
 				
