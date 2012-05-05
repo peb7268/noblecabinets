@@ -736,6 +736,7 @@ body {
 }
 #sidebar .sidebar-block ul#ads li a:hover {
   background: none;
+  cursor: pointer;
 }
 #sidebar .sidebar-block ul#ads li.odd {
   margin-right: 10px;
